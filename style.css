@@ -1,0 +1,209 @@
+/*
+Советую всегда начинать с этого. Обозначать ширину тела, отсутствие дополнительных лишних отступов у боди, 
+который в своих стилевых характеристиках его имеет. Ну и тут же мы обозначим шрифт для текста страницы и 
+цвет фона.
+*/
+body{
+    width: 100%;
+    margin: 0;
+    background-color: #000;
+    color: white;
+    font-family: "Sen", sans-serif;
+}
+
+*
+*:before,
+*:after{box-sizing: border-box;} 
+/*
+Свойство, переключающее алгоритм расчёта, значение border-box означает, что алгоритм расчета будет включать 
+в себя border и paddind.Звездочки означают обращение ко всему html-документу. before и after обозначают мол 
+"выполнить свойство до и после элементов".
+*/
+
+/*Эти элементы в своих стилевых характеристиках так же имеют дополнительные отступы margin. Мы их убираем*/
+h1, h2, h3, h4, h5, h6{
+    margin: 0;
+}
+
+/*-------------------------------Header--------------------------------*/
+header{
+    width: 100%;
+    height: 88px;
+    position: relative;
+}
+
+/* Свойство position помогает центрировать контейнеры и другие элементы внутри другого. У родителя задается 
+значение relative (мол свободное позиционирование), у дочернего absolute. Обязательно при этом используются 
+свойства top, bottom, right и left, которые будут двигать внутренний контейнер относительно краев родителя*/
+
+.container_header{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 3%;
+    left: 3%;
+}
+
+.navigation{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.navigation a{
+    display: inline-block;
+    height: 88px;
+    width: 110px;
+    line-height: 88px;
+
+    text-align: center;
+    text-decoration: none;
+    color: white;
+
+    transition: background 30ms linear;
+}
+
+.navigation a:hover{
+    background-color: #5221E6;
+}
+/*-------------------------------Main--------------------------------*/
+.hero_section {
+    width: 1440px;
+    height: 814px;
+    top: 100px;
+}
+.hero_section_text {
+    width: 738px;
+    height: 368px;
+    top: 221px;
+    left: 662px;
+    gap: 0px;
+    opacity: 0px;
+    position: absolute;
+    left: 600px;
+    top: 86px;
+    font-size: 78px;
+    font-weight: 700;
+    line-height: 93.84px;
+    text-align: left;
+
+}
+.hero_section_text2 {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 27px;
+    text-align: left;
+}
+.philosofy {
+    background-color: #FFF3E4;
+    color: black;
+    width: 720px;
+    height: 600PX;
+    gap: 0px;
+    opacity: 0px;
+    margin-top: -150px;
+}
+.philosofy_text {
+    font-size: 55px;
+    font-weight: 700;
+    line-height: 66.17px;
+    padding-left: 72px;
+    padding-top: 120px;
+    color: #181823;
+}
+.philosofy_text2 {
+    width: 116px;
+    height: 28px;
+    margin-top: 150px;
+    padding-left: 72px;
+    border: 1px 0px 0px 0px;
+    opacity: 0px;
+    color: #181823;
+    border-color: #8491A0;
+}
+.sqsa {
+    margin-left: 720px;
+    display: flex;
+    align-items: stretch;
+    margin-top: -600px;
+}
+.skill {
+    font-size: 55px;
+    font-weight: 700;
+    line-height: 66.17px;
+    text-align: left;
+
+}
+.Skillset {
+    width: 416px;
+    height: 225px;
+    margin-top: 120px;
+    margin-left: 72px;
+    padding: 0px 48px 0px 0px;
+    gap: 0px;
+    opacity: 0px;
+
+}
+.skill_text {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 27px;
+    text-align: left;
+    opacity: 50%;
+
+}
+.for3div {
+    width: 416px;
+    height: 176px;
+    margin-top: 120px;
+    margin-left: 512px;
+    gap: 0px;
+    opacity: 0px;
+    margin-top: -225px;
+    margin-left: 512px;
+
+}
+.fff {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 36px;
+    text-align: left;
+
+}
+.www {
+    width: 368px;
+    height: 72px;
+    top: 104px;
+    opacity: 50%;
+
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+
+}
+.dribbble {
+    width: 1440px;
+    height: 1248px;
+
+}
+.dribbble_text {
+    width: 636px;
+    height: 212px;
+    margin-top: 120px;
+    margin-left: 182px;
+    gap: 0px;
+    border: 1px 0px 0px 0px;
+    opacity: 0px;
+    
+}
+/*-------------------------------Footer--------------------------------*/
+footer {
+    background-color: #181823;
+}
